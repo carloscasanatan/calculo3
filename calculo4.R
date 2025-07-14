@@ -1,6 +1,4 @@
-#' Imprime el código original de DeepSeek completo
-#'
-#' Esta función imprime en consola el código original que permite interactuar con la API de DeepSeek.
+#' Imprime el código original DeepSeek con formato y comentarios
 #'
 #' @export
 calculo4 <- function() {
@@ -20,6 +18,8 @@ d <- function(p, m = "deepseek-chat") {
   j$choices[[1]]$message$content
 }
 #> Sys.setenv(DEEPSEEK_API_KEY = "sk-0454fe125d1548458a224eb5d6e6556b")
-cat(d("cual era mi nombre?"))'
+cat(d("cual era mi nombre?"))
+'
   )
 }
+
